@@ -25,6 +25,10 @@ app.use('/api', apiRoute);
 const StudentRoute=require('./route/studentRoute');
 app.use('/api',StudentRoute);
 
+//user route
+const UserRoute=require('./route/UserRoute');
+app.use('/api',UserRoute)
+
 //connect mongodb
 const dbcon = "mongodb+srv://nodejs_augest:N7E6pikonOIh3LTC@cluster0.07orwdf.mongodb.net/crud"
 const port = process.env.PORT || 2000;
